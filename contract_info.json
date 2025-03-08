@@ -1,0 +1,398 @@
+{
+  "address": "0x4F18Ac46E8c5Ccb1AFDd4D12f867E87ccA77ceA1",
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "bytes32",
+          "name": "transactionId",
+          "type": "bytes32"
+        },
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "senderName",
+          "type": "string"
+        },
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "receiverName",
+          "type": "string"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "timestamp",
+          "type": "uint256"
+        }
+      ],
+      "name": "NewTransaction",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "name": "basicInfo",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "id",
+          "type": "bytes32"
+        },
+        {
+          "components": [
+            {
+              "internalType": "string",
+              "name": "fullName",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "accountNumber",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "bankName",
+              "type": "string"
+            }
+          ],
+          "internalType": "struct TransactionHistory.User",
+          "name": "sender",
+          "type": "tuple"
+        },
+        {
+          "components": [
+            {
+              "internalType": "string",
+              "name": "fullName",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "accountNumber",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "bankName",
+              "type": "string"
+            }
+          ],
+          "internalType": "struct TransactionHistory.User",
+          "name": "receiver",
+          "type": "tuple"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "timestamp",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "senderName",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "senderAccount",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "senderBank",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "receiverName",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "receiverAccount",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "receiverBank",
+          "type": "string"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "createTransaction",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "name": "details",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "currency",
+          "type": "string"
+        },
+        {
+          "internalType": "uint256",
+          "name": "fee",
+          "type": "uint256"
+        },
+        {
+          "internalType": "string",
+          "name": "note",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "paymentMethod",
+          "type": "string"
+        },
+        {
+          "internalType": "enum TransactionHistory.TransactionStatus",
+          "name": "status",
+          "type": "uint8"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "txId",
+          "type": "bytes32"
+        }
+      ],
+      "name": "getBasicInfo",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "senderName",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "senderAccount",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "senderBank",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "receiverName",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "receiverAccount",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "receiverBank",
+          "type": "string"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "timestamp",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "txId",
+          "type": "bytes32"
+        }
+      ],
+      "name": "getDetails",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "currency",
+          "type": "string"
+        },
+        {
+          "internalType": "uint256",
+          "name": "fee",
+          "type": "uint256"
+        },
+        {
+          "internalType": "string",
+          "name": "note",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "paymentMethod",
+          "type": "string"
+        },
+        {
+          "internalType": "enum TransactionHistory.TransactionStatus",
+          "name": "status",
+          "type": "uint8"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getTransactionCount",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "index",
+          "type": "uint256"
+        }
+      ],
+      "name": "getTransactionIdByIndex",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "transactionIds",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "txId",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "string",
+          "name": "currency",
+          "type": "string"
+        },
+        {
+          "internalType": "uint256",
+          "name": "fee",
+          "type": "uint256"
+        },
+        {
+          "internalType": "string",
+          "name": "note",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "paymentMethod",
+          "type": "string"
+        }
+      ],
+      "name": "updateTransactionDetails",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "transactionId",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "enum TransactionHistory.TransactionStatus",
+          "name": "newStatus",
+          "type": "uint8"
+        }
+      ],
+      "name": "updateTransactionStatus",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ]
+}
