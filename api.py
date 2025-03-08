@@ -4,6 +4,7 @@ from pydantic import BaseModel
 from datetime import datetime
 from travel_scraper_example import TravelokaScraper
 import uvicorn
+from pyngrok import ngrok, conf
 
 app = FastAPI(
     title="Hotel URL Generator API",
@@ -95,5 +96,17 @@ def search_hotels(request: dict):
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
+def start_server():
+    # Cấu hình ngrok authtoken
+    ngrok.set_auth_token("2u1qQIoOLe6tloBg3zRir1PvRQI_5KTnVgAfziPjh8xQE3rzw")
+    
+    # Tạo tunnel ngrok
+    public_url = ngrok.connect(8000).public_url
+    print(f"Ngrok tunnel created: {public_url}")
+    print(f"OpenAPI documentation: {public_url}/docs")
+    
+    # Chạy server
+    uvicorn.run("api:app", host="0.0.0.0", port=8000)
+
 if __name__ == "__main__":
-    uvicorn.run("api:app", host="0.0.0.0", port=8000, reload=True) 
+    start_server() 

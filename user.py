@@ -1,9 +1,9 @@
 import requests
 from datetime import datetime, timedelta
 
-
-
-BASE_URL = "http://192.168.224.199:8000/api/v1"
+# Thay YOUR_NGROK_URL bằng URL ngrok nhận được khi chạy server
+# Ví dụ: "https://abcd-xx-xx-xx-xx.ngrok.io/api/v1"
+BASE_URL = "https://1547-2401-d800-8d2-d65b-596f-4d2a-c5c9-672d.ngrok-free.app"
 
 # Dữ liệu request
 data = {
@@ -15,11 +15,7 @@ data = {
 
 def test_connection():
     try:
-        base = BASE_URL.replace("/api/v1", "")
-        if not base.startswith("http"):
-            base = "http://" + base
-            
-        response = requests.get(base)
+        response = requests.get(BASE_URL)  # Gọi trực tiếp đến BASE_URL
         if response.status_code == 200:
             print("Kết nối thành công đến server!")
             return True
@@ -33,7 +29,9 @@ def main():
 
     # 1. Lấy URL tìm kiếm
     print("\n1. Tạo URL tìm kiếm:")
-    response = requests.post(f"{BASE_URL}/generate-url", json=data)
+    url = f"{BASE_URL}/api/v1/generate-url"  # Đường dẫn chính xác
+    print(f"Calling endpoint: {url}")
+    response = requests.post(url, json=data)
     if response.status_code == 200:
         result = response.json()
         print("URL tìm kiếm:", result["url"])
@@ -43,7 +41,9 @@ def main():
 
     print("\n2. Tìm kiếm khách sạn:")
     # 2. Lấy danh sách khách sạn
-    response = requests.post(f"{BASE_URL}/search-hotels", json=data)
+    url = f"{BASE_URL}/api/v1/search-hotels"  # Đường dẫn chính xác
+    print(f"Calling endpoint: {url}")
+    response = requests.post(url, json=data)
     if response.status_code == 200:
         result = response.json()
         print(f"Tìm thấy {result['total']} khách sạn:")
