@@ -78,7 +78,19 @@ class TravelokaScraper(BaseScraper):
             print(f"Lỗi khi load cookies: {str(e)}")
             return False
 
-    def get_hotels(self, location: str, cookies: List[Dict] = None) -> List[Dict]:
+    def get_hotels(
+        self, 
+        location: str, 
+        check_in: datetime = None,
+        check_out: datetime = None,
+        adults: int = 1,
+        cookies: List[Dict] = None
+    ) -> List[Dict]:
+        if not check_in:
+            check_in = datetime.now()
+        if not check_out:
+            check_out = check_in + timedelta(days=2)
+        
         driver = None
         try:
             # Cấu hình Chrome tối ưu hơn
@@ -95,7 +107,7 @@ class TravelokaScraper(BaseScraper):
             driver.implicitly_wait(5)  # Giảm thời gian chờ xuống
             
             # Tạo URL và truy cập
-            search_url = self.build_hotel_search_url(location, datetime.now(), datetime.now() + timedelta(days=2))
+            search_url = self.build_hotel_search_url(location, check_in, check_out, adults)
             print(f"Đang truy cập URL: {search_url}")
             driver.get(search_url)
             
