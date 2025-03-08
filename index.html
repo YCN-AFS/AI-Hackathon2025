@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hệ thống Giao dịch</title>
+    <style>
+        .container { 
+            margin: 20px; 
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+        .transaction-list { margin-top: 20px; }
+        table { 
+            width: 100%; 
+            border-collapse: collapse; 
+            margin-top: 20px;
+        }
+        th, td { 
+            border: 1px solid #ddd; 
+            padding: 8px; 
+            text-align: left; 
+        }
+        th { background-color: #f2f2f2; }
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Tạo Giao Dịch Mới</h2>
+        <form id="transactionForm">
+            <!-- Thông tin người gửi -->
+            <h3>Thông tin người gửi</h3>
+            <div class="form-group">
+                <label>Họ tên người gửi:</label>
+                <input type="text" id="senderName" required>
+                
+                <label>Số tài khoản:</label>
+                <input type="text" id="senderAccount" required>
+                
+                <label>Ngân hàng:</label>
+                <input type="text" id="senderBank" required>
+            </div>
+
+            <!-- Thông tin người nhận -->
+            <h3>Thông tin người nhận</h3>
+            <div class="form-group">
+                <label>Họ tên người nhận:</label>
+                <input type="text" id="receiverName" required>
+                
+                <label>Số tài khoản:</label>
+                <input type="text" id="receiverAccount" required>
+                
+                <label>Ngân hàng:</label>
+                <input type="text" id="receiverBank" required>
+            </div>
+
+            <!-- Thông tin giao dịch -->
+            <h3>Thông tin giao dịch</h3>
+            <div class="form-group">
+                <label>Số tiền:</label>
+                <input type="number" id="amount" required>
+                
+                <label>Loại tiền tệ:</label>
+                <select id="currency" required>
+                    <option value="VND">VND</option>
+                    <option value="USD">USD</option>
+                </select>
+                
+                <label>Phí giao dịch:</label>
+                <input type="number" id="fee" required>
+                
+                <label>Nội dung chuyển tiền:</label>
+                <input type="text" id="note">
+                
+                <label>Phương thức thanh toán:</label>
+                <select id="paymentMethod" required>
+                    <option value="bank_transfer">Chuyển khoản</option>
+                    <option value="e_wallet">Ví điện tử</option>
+                    <option value="credit_card">Thẻ tín dụng</option>
+                </select>
+            </div>
+
+            <button type="submit">Tạo giao dịch</button>
+        </form>
+
+        <h2>Danh sách giao dịch</h2>
+        <div class="transaction-list">
+            <table id="transactionTable">
+                <thead>
+                    <tr>
+                        <th>Thời gian</th>
+                        <th>Người gửi</th>
+                        <th>Người nhận</th>
+                        <th>Số tiền</th>
+                        <th>Trạng thái</th>
+                        <th>Chi tiết</th>
+                    </tr>
+                </thead>
+                <tbody id="transactionList"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html> 
