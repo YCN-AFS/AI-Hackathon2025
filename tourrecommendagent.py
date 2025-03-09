@@ -9,15 +9,15 @@ Original file is located at
 
 # Commented out IPython magic to ensure Python compatibility.
 # %%capture --no-stderr
-# %pip install langgraph langchain-community langchain-anthropic tavily-python pandas
+# %pip install -U langgraph langchain-community langchain-anthropic tavily-python pandas
 
-# !pip install --upgrade langchain-huggingface text-generation transformers google-search-results numexpr langchainhub sentencepiece jinja2 bitsandbytes accelerate
+!pip install --upgrade --quiet langchain-huggingface text-generation transformers google-search-results numexpr langchainhub sentencepiece jinja2 bitsandbytes accelerate
 
-# !pip install -qU langchain-community faiss-cpu
+!pip install -qU langchain-community faiss-cpu
 
-# !pip install --quiet langchain_experimental
+!pip install --quiet langchain_experimental
 
-# !pip install -qU langchain-google-genai
+!pip install -qU langchain-google-genai
 
 import os
 # import shutil
@@ -785,7 +785,7 @@ def save_transaction_tool(
         Lưu thông tin một cuộc giao dịch vào BlockChain
         :return: Dictionary chứa kết quả giao dịch
         """
-        BASE_URL = "https://dc99-2a09-bac5-d46b-2646-00-3d0-43.ngrok-free.app"
+        BASE_URL = "https://96f0-2a09-bac1-7aa0-10-00-2e4-3c.ngrok-free.app"
         try:
             transaction_data = {
                 "sender": {

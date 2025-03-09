@@ -1,0 +1,95 @@
+2025-03-09 10:48:10,726 - __main__ - INFO - Connected to blockchain. Using account: 0x49d4F3811e1Ba80CE9BcDF7981cbed5f561544F2
+2025-03-09 10:48:10,731 - pyngrok.ngrok - INFO - Opening tunnel named: http-8000-ccbf4161-44cf-4ee3-9ada-a9970bac4add
+2025-03-09 10:48:10,731 - pyngrok.process - INFO - Overriding default auth token
+2025-03-09 10:48:10,780 - pyngrok.process.ngrok - INFO - t=2025-03-09T10:48:10+0700 lvl=info msg="no configuration paths supplied"
+2025-03-09 10:48:10,780 - pyngrok.process.ngrok - INFO - t=2025-03-09T10:48:10+0700 lvl=info msg="using configuration at default config path" path=C:\\Users\\fox\\AppData\\Local/ngrok/ngrok.yml
+2025-03-09 10:48:10,781 - pyngrok.process.ngrok - INFO - t=2025-03-09T10:48:10+0700 lvl=info msg="open config file" path=C:\\Users\\fox\\AppData\\Local\\ngrok\\ngrok.yml err=nil
+2025-03-09 10:48:10,781 - pyngrok.process.ngrok - WARNING - t=2025-03-09T10:48:10+0700 lvl=warn msg="can't bind default web address, trying alternatives" obj=web addr=127.0.0.1:4040
+2025-03-09 10:48:10,781 - pyngrok.process.ngrok - INFO - t=2025-03-09T10:48:10+0700 lvl=info msg="starting web service" obj=web addr=127.0.0.1:4041 allow_hosts=[]
+2025-03-09 10:48:12,137 - pyngrok.process.ngrok - ERROR - t=2025-03-09T10:48:12+0700 lvl=eror msg="failed to reconnect session" obj=tunnels.session err="authentication failed: Your account is limited to 1 simultaneous ngrok agent sessions.\nYou can run multiple simultaneous tunnels from a single agent session by defining the tunnels in your agent configuration file and starting them with the command `ngrok start --all`.\nRead more about the agent configuration file: https://ngrok.com/docs/secure-tunnels/ngrok-agent/reference/config\nYou can view your current agent sessions in the dashboard:\nhttps://dashboard.ngrok.com/agents\r\n\r\nERR_NGROK_108\r\n"
+2025-03-09 10:48:12,139 - pyngrok.process.ngrok - ERROR - t=2025-03-09T10:48:12+0700 lvl=eror msg="session closing" obj=tunnels.session err="authentication failed: Your account is limited to 1 simultaneous ngrok agent sessions.\nYou can run multiple simultaneous tunnels from a single agent session by defining the tunnels in your agent configuration file and starting them with the command `ngrok start --all`.\nRead more about the agent configuration file: https://ngrok.com/docs/secure-tunnels/ngrok-agent/reference/config\nYou can view your current agent sessions in the dashboard:\nhttps://dashboard.ngrok.com/agents\r\n\r\nERR_NGROK_108\r\n"
+2025-03-09 10:48:12,139 - pyngrok.process.ngrok - INFO - t=2025-03-09T10:48:12+0700 lvl=info msg="received stop request" obj=app stopReq="{err:{Remote:true Inner:{Inner:0xc0008a0af0}} restart:false}"
+2025-03-09 10:48:12,140 - pyngrok.process.ngrok - ERROR - t=2025-03-09T10:48:12+0700 lvl=eror msg="terminating with error" obj=app err="authentication failed: Your account is limited to 1 simultaneous ngrok agent sessions.\nYou can run multiple simultaneous tunnels from a single agent session by defining the tunnels in your agent configuration file and starting them with the command `ngrok start --all`.\nRead more about the agent configuration file: https://ngrok.com/docs/secure-tunnels/ngrok-agent/reference/config\nYou can view your current agent sessions in the dashboard:\nhttps://dashboard.ngrok.com/agents\r\n\r\nERR_NGROK_108\r\n"
+2025-03-09 10:48:12,141 - pyngrok.process.ngrok - CRITICAL - t=2025-03-09T10:48:12+0700 lvl=crit msg="command failed" err="authentication failed: Your account is limited to 1 simultaneous ngrok agent sessions.\nYou can run multiple simultaneous tunnels from a single agent session by defining the tunnels in your agent configuration file and starting them with the command `ngrok start --all`.\nRead more about the agent configuration file: https://ngrok.com/docs/secure-tunnels/ngrok-agent/reference/config\nYou can view your current agent sessions in the dashboard:\nhttps://dashboard.ngrok.com/agents\r\n\r\nERR_NGROK_108\r\n"
+2025-03-09 10:48:12,141 - pyngrok.process.ngrok - INFO - t=2025-03-09T10:48:12+0700 lvl=info msg="no more state changes" obj=tunnels.session
+2025-03-09 10:48:12,150 - __main__ - ERROR - Error starting server: The ngrok process errored on start: authentication failed: Your account is limited to 1 simultaneous ngrok agent sessions.\nYou can run multiple simultaneous tunnels from a single agent session by defining the tunnels in your agent configuration file and starting them with the command `ngrok start --all`.\nRead more about the agent configuration file: https://ngrok.com/docs/secure-tunnels/ngrok-agent/reference/config\nYou can view your current agent sessions in the dashboard:\nhttps://dashboard.ngrok.com/agents\r\n\r\nERR_NGROK_108\r\n.
+2025-03-09 10:49:10,356 - __main__ - INFO - Connected to blockchain. Using account: 0x49d4F3811e1Ba80CE9BcDF7981cbed5f561544F2
+2025-03-09 10:49:10,361 - pyngrok.ngrok - INFO - Opening tunnel named: http-8000-f0c38be4-3cf7-49b3-8c2e-9f8eca16184d
+2025-03-09 10:49:10,361 - pyngrok.process - INFO - Overriding default auth token
+2025-03-09 10:49:10,393 - pyngrok.process.ngrok - INFO - t=2025-03-09T10:49:10+0700 lvl=info msg="no configuration paths supplied"
+2025-03-09 10:49:10,393 - pyngrok.process.ngrok - INFO - t=2025-03-09T10:49:10+0700 lvl=info msg="using configuration at default config path" path=C:\\Users\\fox\\AppData\\Local/ngrok/ngrok.yml
+2025-03-09 10:49:10,393 - pyngrok.process.ngrok - INFO - t=2025-03-09T10:49:10+0700 lvl=info msg="open config file" path=C:\\Users\\fox\\AppData\\Local\\ngrok\\ngrok.yml err=nil
+2025-03-09 10:49:10,394 - pyngrok.process.ngrok - INFO - t=2025-03-09T10:49:10+0700 lvl=info msg="starting web service" obj=web addr=127.0.0.1:4040 allow_hosts=[]
+2025-03-09 10:49:11,739 - pyngrok.process.ngrok - INFO - t=2025-03-09T10:49:11+0700 lvl=info msg="client session established" obj=tunnels.session
+2025-03-09 10:49:11,739 - pyngrok.process.ngrok - INFO - t=2025-03-09T10:49:11+0700 lvl=info msg="tunnel session started" obj=tunnels.session
+2025-03-09 10:49:11,889 - pyngrok.process.ngrok - INFO - t=2025-03-09T10:49:11+0700 lvl=info msg=start pg=/api/tunnels id=aefa53908b3683d0
+2025-03-09 10:49:11,889 - pyngrok.process.ngrok - INFO - t=2025-03-09T10:49:11+0700 lvl=info msg=end pg=/api/tunnels id=aefa53908b3683d0 status=200 dur=0s
+2025-03-09 10:49:11,890 - pyngrok.process.ngrok - INFO - t=2025-03-09T10:49:11+0700 lvl=info msg=start pg=/api/tunnels id=235af07830a794e0
+2025-03-09 10:49:11,890 - pyngrok.process.ngrok - INFO - t=2025-03-09T10:49:11+0700 lvl=info msg=end pg=/api/tunnels id=235af07830a794e0 status=200 dur=0s
+2025-03-09 10:49:11,915 - pyngrok.process.ngrok - INFO - t=2025-03-09T10:49:11+0700 lvl=info msg=start pg=/api/tunnels id=2aa463b689afac63
+2025-03-09 10:49:12,325 - pyngrok.process.ngrok - INFO - t=2025-03-09T10:49:12+0700 lvl=info msg="started tunnel" obj=tunnels name=http-8000-f0c38be4-3cf7-49b3-8c2e-9f8eca16184d addr=http://localhost:8000 url=https://f6fd-2a09-bac5-d46b-2646-00-3d0-43.ngrok-free.app
+2025-03-09 10:49:12,326 - pyngrok.process.ngrok - INFO - t=2025-03-09T10:49:12+0700 lvl=info msg=end pg=/api/tunnels id=2aa463b689afac63 status=201 dur=409.216ms
+2025-03-09 10:49:12,326 - __main__ - INFO - 
+Ngrok tunnel created:
+2025-03-09 10:49:12,326 - __main__ - INFO - Public URL: NgrokTunnel: "https://f6fd-2a09-bac5-d46b-2646-00-3d0-43.ngrok-free.app" -> "http://localhost:8000"
+2025-03-09 10:49:12,326 - __main__ - INFO - Swagger UI: NgrokTunnel: "https://f6fd-2a09-bac5-d46b-2646-00-3d0-43.ngrok-free.app" -> "http://localhost:8000"/docs
+2025-03-09 10:50:52,848 - pyngrok.process.ngrok - INFO - t=2025-03-09T10:50:52+0700 lvl=info msg="received stop request" obj=app stopReq="{err:<nil> restart:false}"
+2025-03-09 10:50:52,849 - pyngrok.process.ngrok - INFO - t=2025-03-09T10:50:52+0700 lvl=info msg="session closing" obj=tunnels.session err=nil
+2025-03-09 10:50:52,849 - pyngrok.process.ngrok - INFO - t=2025-03-09T10:50:52+0700 lvl=info msg="accept failed" obj=tunnels.session obj=csess id=f5ac85839b45 err="reconnecting session closed"
+2025-03-09 10:50:52,849 - pyngrok.process.ngrok - INFO - t=2025-03-09T10:50:52+0700 lvl=info msg="failed to accept connection: Listener closed" obj=tunnels.session clientid=911f9786ec3c54272c1700b00b59b1cb
+2025-03-09 10:50:52,849 - pyngrok.process.ngrok - WARNING - t=2025-03-09T10:50:52+0700 lvl=warn msg="Stopping forwarder" name=http-8000-f0c38be4-3cf7-49b3-8c2e-9f8eca16184d acceptErr="failed to accept connection: Listener closed"
+2025-03-09 10:50:56,286 - __main__ - INFO - Connected to blockchain. Using account: 0x49d4F3811e1Ba80CE9BcDF7981cbed5f561544F2
+2025-03-09 10:50:56,288 - pyngrok.ngrok - INFO - Opening tunnel named: http-8000-950e6bb9-3856-4a93-a98f-ac436c2397db
+2025-03-09 10:50:56,289 - pyngrok.process - INFO - Overriding default auth token
+2025-03-09 10:50:56,321 - pyngrok.process.ngrok - INFO - t=2025-03-09T10:50:56+0700 lvl=info msg="no configuration paths supplied"
+2025-03-09 10:50:56,321 - pyngrok.process.ngrok - INFO - t=2025-03-09T10:50:56+0700 lvl=info msg="using configuration at default config path" path=C:\\Users\\fox\\AppData\\Local/ngrok/ngrok.yml
+2025-03-09 10:50:56,321 - pyngrok.process.ngrok - INFO - t=2025-03-09T10:50:56+0700 lvl=info msg="open config file" path=C:\\Users\\fox\\AppData\\Local\\ngrok\\ngrok.yml err=nil
+2025-03-09 10:50:56,323 - pyngrok.process.ngrok - INFO - t=2025-03-09T10:50:56+0700 lvl=info msg="starting web service" obj=web addr=127.0.0.1:4040 allow_hosts=[]
+2025-03-09 10:50:58,073 - pyngrok.process.ngrok - INFO - t=2025-03-09T10:50:58+0700 lvl=info msg="client session established" obj=tunnels.session
+2025-03-09 10:50:58,073 - pyngrok.process.ngrok - INFO - t=2025-03-09T10:50:58+0700 lvl=info msg="tunnel session started" obj=tunnels.session
+2025-03-09 10:50:58,219 - pyngrok.process.ngrok - INFO - t=2025-03-09T10:50:58+0700 lvl=info msg=start pg=/api/tunnels id=be7c4c16b2d097e0
+2025-03-09 10:50:58,219 - pyngrok.process.ngrok - INFO - t=2025-03-09T10:50:58+0700 lvl=info msg=end pg=/api/tunnels id=be7c4c16b2d097e0 status=200 dur=0s
+2025-03-09 10:50:58,220 - pyngrok.process.ngrok - INFO - t=2025-03-09T10:50:58+0700 lvl=info msg=start pg=/api/tunnels id=eebe19b6ee39817c
+2025-03-09 10:50:58,220 - pyngrok.process.ngrok - INFO - t=2025-03-09T10:50:58+0700 lvl=info msg=end pg=/api/tunnels id=eebe19b6ee39817c status=200 dur=0s
+2025-03-09 10:50:58,234 - pyngrok.process.ngrok - INFO - t=2025-03-09T10:50:58+0700 lvl=info msg=start pg=/api/tunnels id=3db653a5a4a0d41a
+2025-03-09 10:50:58,646 - pyngrok.process.ngrok - INFO - t=2025-03-09T10:50:58+0700 lvl=info msg="started tunnel" obj=tunnels name=http-8000-950e6bb9-3856-4a93-a98f-ac436c2397db addr=http://localhost:8000 url=https://89fd-2a09-bac5-d46b-2646-00-3d0-43.ngrok-free.app
+2025-03-09 10:50:58,646 - __main__ - INFO - 
+Ngrok tunnel created:
+2025-03-09 10:50:58,646 - __main__ - INFO - Public URL: NgrokTunnel: "https://89fd-2a09-bac5-d46b-2646-00-3d0-43.ngrok-free.app" -> "http://localhost:8000"
+2025-03-09 10:50:58,646 - __main__ - INFO - Swagger UI: NgrokTunnel: "https://89fd-2a09-bac5-d46b-2646-00-3d0-43.ngrok-free.app" -> "http://localhost:8000"/docs
+2025-03-09 10:50:58,646 - pyngrok.process.ngrok - INFO - t=2025-03-09T10:50:58+0700 lvl=info msg=end pg=/api/tunnels id=3db653a5a4a0d41a status=201 dur=411.6572ms
+2025-03-09 10:51:45,020 - pyngrok.process.ngrok - INFO - t=2025-03-09T10:51:45+0700 lvl=info msg="received stop request" obj=app stopReq="{err:<nil> restart:false}"
+2025-03-09 10:51:45,020 - pyngrok.process.ngrok - INFO - t=2025-03-09T10:51:45+0700 lvl=info msg="session closing" obj=tunnels.session err=nil
+2025-03-09 10:51:45,021 - pyngrok.process.ngrok - INFO - t=2025-03-09T10:51:45+0700 lvl=info msg="accept failed" obj=tunnels.session obj=csess id=c5b63f90c03c err="reconnecting session closed"
+2025-03-09 10:51:45,021 - pyngrok.process.ngrok - INFO - t=2025-03-09T10:51:45+0700 lvl=info msg="no more state changes" obj=tunnels.session
+2025-03-09 10:51:45,021 - pyngrok.process.ngrok - INFO - t=2025-03-09T10:51:45+0700 lvl=info msg="failed to accept connection: Listener closed" obj=tunnels.session clientid=03f82a413dc320ce46b502d51a69506f
+2025-03-09 10:51:45,022 - pyngrok.process.ngrok - WARNING - t=2025-03-09T10:51:45+0700 lvl=warn msg="Stopping forwarder" name=http-8000-950e6bb9-3856-4a93-a98f-ac436c2397db acceptErr="failed to accept connection: Listener closed"
+2025-03-09 10:51:48,079 - __main__ - INFO - Connected to blockchain. Using account: 0x49d4F3811e1Ba80CE9BcDF7981cbed5f561544F2
+2025-03-09 10:51:48,082 - pyngrok.ngrok - INFO - Opening tunnel named: http-8000-22824d55-50c5-4dbd-a33b-2fb66ed8fa17
+2025-03-09 10:51:48,082 - pyngrok.process - INFO - Overriding default auth token
+2025-03-09 10:51:48,118 - pyngrok.process.ngrok - INFO - t=2025-03-09T10:51:48+0700 lvl=info msg="no configuration paths supplied"
+2025-03-09 10:51:48,118 - pyngrok.process.ngrok - INFO - t=2025-03-09T10:51:48+0700 lvl=info msg="using configuration at default config path" path=C:\\Users\\fox\\AppData\\Local/ngrok/ngrok.yml
+2025-03-09 10:51:48,118 - pyngrok.process.ngrok - INFO - t=2025-03-09T10:51:48+0700 lvl=info msg="open config file" path=C:\\Users\\fox\\AppData\\Local\\ngrok\\ngrok.yml err=nil
+2025-03-09 10:51:48,119 - pyngrok.process.ngrok - INFO - t=2025-03-09T10:51:48+0700 lvl=info msg="starting web service" obj=web addr=127.0.0.1:4040 allow_hosts=[]
+2025-03-09 10:51:49,814 - pyngrok.process.ngrok - INFO - t=2025-03-09T10:51:49+0700 lvl=info msg="client session established" obj=tunnels.session
+2025-03-09 10:51:49,815 - pyngrok.process.ngrok - INFO - t=2025-03-09T10:51:49+0700 lvl=info msg="tunnel session started" obj=tunnels.session
+2025-03-09 10:51:49,961 - pyngrok.process.ngrok - INFO - t=2025-03-09T10:51:49+0700 lvl=info msg=start pg=/api/tunnels id=3832d99e0c59de1d
+2025-03-09 10:51:49,961 - pyngrok.process.ngrok - INFO - t=2025-03-09T10:51:49+0700 lvl=info msg=end pg=/api/tunnels id=3832d99e0c59de1d status=200 dur=0s
+2025-03-09 10:51:49,962 - pyngrok.process.ngrok - INFO - t=2025-03-09T10:51:49+0700 lvl=info msg=start pg=/api/tunnels id=b091ac6afd51369d
+2025-03-09 10:51:49,962 - pyngrok.process.ngrok - INFO - t=2025-03-09T10:51:49+0700 lvl=info msg=end pg=/api/tunnels id=b091ac6afd51369d status=200 dur=991.4µs
+2025-03-09 10:51:49,963 - pyngrok.process.ngrok - INFO - t=2025-03-09T10:51:49+0700 lvl=info msg=start pg=/api/tunnels id=501699e377e42ec7
+2025-03-09 10:51:50,379 - pyngrok.process.ngrok - INFO - t=2025-03-09T10:51:50+0700 lvl=info msg="started tunnel" obj=tunnels name=http-8000-22824d55-50c5-4dbd-a33b-2fb66ed8fa17 addr=http://localhost:8000 url=https://617b-2a09-bac5-d46b-2646-00-3d0-43.ngrok-free.app
+2025-03-09 10:51:50,379 - pyngrok.process.ngrok - INFO - t=2025-03-09T10:51:50+0700 lvl=info msg=end pg=/api/tunnels id=501699e377e42ec7 status=201 dur=415.5763ms
+2025-03-09 10:51:50,380 - __main__ - INFO - 
+Ngrok tunnel created:
+2025-03-09 10:51:50,380 - __main__ - INFO - Public URL: NgrokTunnel: "https://617b-2a09-bac5-d46b-2646-00-3d0-43.ngrok-free.app" -> "http://localhost:8000"
+2025-03-09 10:51:50,380 - __main__ - INFO - Swagger UI: NgrokTunnel: "https://617b-2a09-bac5-d46b-2646-00-3d0-43.ngrok-free.app" -> "http://localhost:8000"/docs
+2025-03-09 10:52:11,681 - __main__ - ERROR - Error loading transactions page: 400: Could not transact with/call contract function, is contract deployed correctly and chain synced?
+2025-03-09 10:52:16,266 - __main__ - ERROR - Error loading transactions page: 400: Could not transact with/call contract function, is contract deployed correctly and chain synced?
+2025-03-09 10:52:21,271 - __main__ - ERROR - Error loading transactions page: 400: Could not transact with/call contract function, is contract deployed correctly and chain synced?
+2025-03-09 10:54:01,131 - pyngrok.process.ngrok - INFO - t=2025-03-09T10:54:01+0700 lvl=info msg="received stop request" obj=app stopReq="{err:<nil> restart:false}"
+2025-03-09 10:54:01,131 - pyngrok.process.ngrok - INFO - t=2025-03-09T10:54:01+0700 lvl=info msg="session closing" obj=tunnels.session err=nil
+2025-03-09 10:54:01,131 - pyngrok.process.ngrok - INFO - t=2025-03-09T10:54:01+0700 lvl=info msg="accept failed" obj=tunnels.session obj=csess id=96072fa1c756 err="reconnecting session closed"
+2025-03-09 10:54:01,131 - pyngrok.process.ngrok - INFO - t=2025-03-09T10:54:01+0700 lvl=info msg="no more state changes" obj=tunnels.session
+2025-03-09 10:54:01,131 - pyngrok.process.ngrok - INFO - t=2025-03-09T10:54:01+0700 lvl=info msg="failed to accept connection: Listener closed" obj=tunnels.session clientid=ddac7017bf554c2f870bc308ba4880e5
+2025-03-09 10:54:01,131 - pyngrok.process.ngrok - WARNING - t=2025-03-09T10:54:01+0700 lvl=warn msg="Stopping forwarder" name=http-8000-22824d55-50c5-4dbd-a33b-2fb66ed8fa17 acceptErr="failed to accept connection: Listener closed"
