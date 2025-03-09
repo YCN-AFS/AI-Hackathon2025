@@ -85,6 +85,7 @@ contract TransactionHistory {
 
         transactionIds.push(txId);
 
+        // Emit event với đầy đủ thông tin
         emit NewTransaction(
             txId,
             senderName,
